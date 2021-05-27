@@ -8,7 +8,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
+      // className={className}
       style={{
         ...style,
         display: "block",
@@ -24,7 +24,7 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
+      // className={className}
       style={{
         ...style,
         display: "block",
@@ -48,7 +48,7 @@ export const AdCard: FC<{}> = ({}) => {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -57,10 +57,19 @@ export const AdCard: FC<{}> = ({}) => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
@@ -89,9 +98,9 @@ export const AdCard: FC<{}> = ({}) => {
                 <div className="max-w-6xl mx-auto">
                   <div className="flex items-center justify-center ">
                     <div className="max-w-sm   py-6 px-3">
-                      <div className="bg-white shadow-xl rounded-lg overflow-hidden p-3">
+                      <div className="bg-white shadow-xl rounded-lg overflow-hidden ">
                         <div
-                          className="bg-cover bg-center h-56 p-4 rounded-lg"
+                          className="bg-cover bg-center h-56 p-4 "
                           style={{
                             backgroundImage:
                               "url(https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)",
