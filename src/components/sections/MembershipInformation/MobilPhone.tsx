@@ -16,7 +16,7 @@ export const MobilPhone: FC<{}> = ({}) => {
           <form action="">
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Cep Telefonu *
                 </label>
               </p>

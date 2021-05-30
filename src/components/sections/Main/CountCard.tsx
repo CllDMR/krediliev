@@ -12,9 +12,9 @@ export const CountCard: FC<{}> = ({}) => {
         <p className="text-[12px] mb-8 text-center">
           Lorem ipsum dolor sit amet
         </p>
-        <div class=" py-6 flex flex-col justify-center sm:py-12">
-          <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-4 px-4">
-            <div class="relative w-full bg-gray-100 h-[108px] flex-col  | p-4 border-solid rounded-3xl border-2 | flex justify-around cursor-pointer ">
+        <div className=" py-6 flex flex-col justify-center sm:py-12">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-4 px-4">
+            <div className="relative w-full bg-gray-100 h-[108px] flex-col  | p-4 border-solid rounded-3xl border-2 | flex justify-around cursor-pointer ">
               <Image
                 className="rounded-2xl h-20 filter brightness-50"
                 layout="fill"
@@ -31,7 +31,7 @@ export const CountCard: FC<{}> = ({}) => {
                 </div>
               </div>
             </div>
-            <div class="relative bg-gray-100 h-[108px] flex-col  | p-4 border-solid rounded-3xl border-2 | flex justify-around cursor-pointer ">
+            <div className="relative bg-gray-100 h-[108px] flex-col  | p-4 border-solid rounded-3xl border-2 | flex justify-around cursor-pointer ">
               <Image
                 className="rounded-2xl "
                 layout="fill"
@@ -48,7 +48,7 @@ export const CountCard: FC<{}> = ({}) => {
                 </div>
               </div>
             </div>
-            <div class="relative bg-gray-100 h-[108px] flex-col  | p-4 border-solid rounded-3xl border-2 | flex justify-around cursor-pointer ">
+            <div className="relative bg-gray-100 h-[108px] flex-col  | p-4 border-solid rounded-3xl border-2 | flex justify-around cursor-pointer ">
               <Image
                 className="rounded-2xl "
                 layout="fill"
@@ -65,7 +65,7 @@ export const CountCard: FC<{}> = ({}) => {
                 </div>
               </div>
             </div>
-            <div class="relative bg-gray-100 h-[108px] flex-col  | p-4 border-solid rounded-3xl border-2 | flex justify-around cursor-pointer ">
+            <div className="relative bg-gray-100 h-[108px] flex-col  | p-4 border-solid rounded-3xl border-2 | flex justify-around cursor-pointer ">
               <Image
                 className="rounded-2xl "
                 layout="fill"

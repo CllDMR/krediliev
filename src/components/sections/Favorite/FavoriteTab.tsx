@@ -81,111 +81,111 @@ export const FavoriteTab: FC<{}> = ({}) => {
                 <FavoriteCard />
               </div>
               <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                <div class="-mx-4 sm:-mx-8 px-4 sm:px-8  overflow-x-auto">
-                  <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                    <table class="min-w-full leading-normal">
+                <div className="-mx-4 sm:-mx-8 px-4 sm:px-8  overflow-x-auto">
+                  <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
+                    <table className="min-w-full leading-normal">
                       <thead>
                         <tr>
-                          <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 tracking-wider">
+                          <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 tracking-wider">
                             Arama Adı
                           </th>
-                          <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 tracking-wider">
+                          <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 tracking-wider">
                             Bildirim
                           </th>
-                          <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 tracking-wider">
+                          <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 tracking-wider">
                             Düzenle
                           </th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                            <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10"></div>
-                              <p class="text-gray-900 whitespace-no-wrap">
+                          <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <div className="flex items-center">
+                              <div className="flex-shrink-0 h-10"></div>
+                              <p className="text-gray-900 whitespace-no-wrap">
                                 Vera Carpenter
                               </p>
                             </div>
                           </td>
-                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap ">
+                          <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <p className="text-gray-900 whitespace-no-wrap ">
                               Admin
                             </p>
                           </td>
-                          <td class="px-5 flex py-5 border-b border-gray-200 space-x-5 bg-white text-sm">
-                            <p class="text-gray-900  mt-[19px] whitespace-no-wrap underline">
+                          <td className="px-5 flex py-5 border-b border-gray-200 space-x-5 bg-white text-sm">
+                            <p className="text-gray-900  mt-[19px] whitespace-no-wrap underline">
                               Düzenle
                             </p>
-                            <p class="text-gray-900 mt-[19px] whitespace-no-wrap underline">
+                            <p className="text-gray-900 mt-[19px] whitespace-no-wrap underline">
                               XSil
                             </p>
                           </td>
                         </tr>
                         <tr>
-                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                            <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10"></div>
-                              <p class="text-gray-900 whitespace-no-wrap">
+                          <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <div className="flex items-center">
+                              <div className="flex-shrink-0 h-10"></div>
+                              <p className="text-gray-900 whitespace-no-wrap">
                                 Blake Bowman
                               </p>
                             </div>
                           </td>
-                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">
+                          <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <p className="text-gray-900 whitespace-no-wrap">
                               Editor
                             </p>
                           </td>
-                          <td class="px-5 flex py-5 border-b border-gray-200 space-x-5 bg-white text-sm">
-                            <p class="text-gray-900  mt-[19px] whitespace-no-wrap underline">
+                          <td className="px-5 flex py-5 border-b border-gray-200 space-x-5 bg-white text-sm">
+                            <p className="text-gray-900  mt-[19px] whitespace-no-wrap underline">
                               Düzenle
                             </p>
-                            <p class="text-gray-900 mt-[19px] whitespace-no-wrap underline">
+                            <p className="text-gray-900 mt-[19px] whitespace-no-wrap underline">
                               XSil
                             </p>
                           </td>
                         </tr>
                         <tr>
-                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                            <div class="flex items-center">
-                              <div class="flex-shrink-0  h-10"></div>
-                              <p class="text-gray-900 whitespace-no-wrap">
+                          <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <div className="flex items-center">
+                              <div className="flex-shrink-0  h-10"></div>
+                              <p className="text-gray-900 whitespace-no-wrap">
                                 Dana Moore
                               </p>
                             </div>
                           </td>
-                          <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">
+                          <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <p className="text-gray-900 whitespace-no-wrap">
                               Editor
                             </p>
                           </td>
-                          <td class="px-5 flex py-5 border-b border-gray-200 space-x-5 bg-white text-sm">
-                            <p class="text-gray-900  mt-[19px] whitespace-no-wrap underline">
+                          <td className="px-5 flex py-5 border-b border-gray-200 space-x-5 bg-white text-sm">
+                            <p className="text-gray-900  mt-[19px] whitespace-no-wrap underline">
                               Düzenle
                             </p>
-                            <p class="text-gray-900 mt-[19px] whitespace-no-wrap underline">
+                            <p className="text-gray-900 mt-[19px] whitespace-no-wrap underline">
                               XSil
                             </p>
                           </td>
                         </tr>
                         <tr>
-                          <td class="px-5 py-5 bg-white text-sm">
-                            <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10"></div>
-                              <p class="text-gray-900 whitespace-no-wrap">
+                          <td className="px-5 py-5 bg-white text-sm">
+                            <div className="flex items-center">
+                              <div className="flex-shrink-0 h-10"></div>
+                              <p className="text-gray-900 whitespace-no-wrap">
                                 Alonzo Cox
                               </p>
                             </div>
                           </td>
-                          <td class="px-5 py-5 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">
+                          <td className="px-5 py-5 bg-white text-sm">
+                            <p className="text-gray-900 whitespace-no-wrap">
                               Admin
                             </p>
                           </td>
-                          <td class="px-5 flex py-5 border-b border-gray-200 space-x-5 bg-white text-sm">
-                            <p class="text-gray-900  mt-[19px] whitespace-no-wrap underline">
+                          <td className="px-5 flex py-5 border-b border-gray-200 space-x-5 bg-white text-sm">
+                            <p className="text-gray-900  mt-[19px] whitespace-no-wrap underline">
                               Düzenle
                             </p>
-                            <p class="text-gray-900 mt-[19px] whitespace-no-wrap underline">
+                            <p className="text-gray-900 mt-[19px] whitespace-no-wrap underline">
                               XSil
                             </p>
                           </td>

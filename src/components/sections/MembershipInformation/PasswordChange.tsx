@@ -9,7 +9,7 @@ export const PasswordChange: FC<{}> = ({}) => {
           <form action="">
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Mevcut Şifre *
                 </label>
               </p>
@@ -26,7 +26,7 @@ export const PasswordChange: FC<{}> = ({}) => {
             </div>
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Yeni Şifre *
                 </label>
               </p>
@@ -43,7 +43,7 @@ export const PasswordChange: FC<{}> = ({}) => {
             </div>
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Yeni Şifre Tekrar *
                 </label>
               </p>

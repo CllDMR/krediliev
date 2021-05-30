@@ -29,7 +29,7 @@ export const PersonalInformation: FC<{}> = ({}) => {
             </div>
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Adı *
                 </label>
               </p>
@@ -46,7 +46,7 @@ export const PersonalInformation: FC<{}> = ({}) => {
             </div>
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Soyad *
                 </label>
               </p>
@@ -83,12 +83,12 @@ export const PersonalInformation: FC<{}> = ({}) => {
             </div>
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Eğitim Durumu *
                 </label>
               </p>
               <p>
-                <select class="form-select w-full  h-[50px] px-3 py-2 mb-1 mt-3 border  rounded-md focus:outline-none focus:border-[#664fbd] transition-colors cursor-pointer">
+                <select className="form-select w-full  h-[50px] px-3 py-2 mb-1 mt-3 border  rounded-md focus:outline-none focus:border-[#664fbd] transition-colors cursor-pointer">
                   <option value="01">01 - January</option>
                   <option value="02">02 - February</option>
                   <option value="03">03 - March</option>
@@ -106,12 +106,12 @@ export const PersonalInformation: FC<{}> = ({}) => {
             </div>
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Meslek *
                 </label>
               </p>
               <p>
-                <select class="form-select w-full h-[50px] px-3 py-2 mb-1 mt-3 border  rounded-md focus:outline-none focus:border-[#664fbd] transition-colors cursor-pointer">
+                <select className="form-select w-full h-[50px] px-3 py-2 mb-1 mt-3 border  rounded-md focus:outline-none focus:border-[#664fbd] transition-colors cursor-pointer">
                   <option value="01">01 - January</option>
                   <option value="02">02 - February</option>
                   <option value="03">03 - March</option>

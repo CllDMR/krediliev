@@ -9,7 +9,7 @@ export const Eposta: FC<{}> = ({}) => {
           <form action="">
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Mevcut E-posta Adresi *
                 </label>
               </p>
@@ -26,7 +26,7 @@ export const Eposta: FC<{}> = ({}) => {
             </div>
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Yeni E-posta Adresi *
                 </label>
               </p>
@@ -43,7 +43,7 @@ export const Eposta: FC<{}> = ({}) => {
             </div>
             <div className="text-[14px] mt-4">
               <p>
-                <label for="name" className="bg-white text-gray-600 px-1">
+                <label htmlFor="name" className="bg-white text-gray-600 px-1">
                   Yeni E-posta Adresi Tekrar *
                 </label>
               </p>
