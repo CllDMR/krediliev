@@ -1,50 +1,59 @@
 import { FC, useState } from "react";
+import Link from "next/link";
 
 export const PageNav: FC<{}> = ({}) => {
   const [activeStatus, setActiveStatus] = useState(1);
   return (
     <div className="mx-auto h-[60px] rounded-xl container py-8 px-4 flex items-center justify-center w-full  bg-white">
       <ul className="w-full hidden md:flex items-center pb-2 justify-center  xl:space-x-64">
-        <li
-          onClick={() => setActiveStatus(1)}
-          className={
-            activeStatus == 1
-              ? "py-2 px-4 cursor-pointer border-b-[2px] border-[#664fbd]  font-semibold font-poppins ease-in duration-150   text-xs xl:text-sm leading-none text-center text-black  "
-              : "py-2 px-4 cursor-pointer  bg-transparent hover:bg-indigo-50 ease-in duration-150 rounded text-xs xl:text-sm leading-none text-[#262626] "
-          }
-        >
-          İLANLARIM
-        </li>
-        <li
-          onClick={() => setActiveStatus(2)}
-          className={
-            activeStatus == 2
-              ? "py-2 px-4 cursor-pointer border-b-[2px] border-[#664fbd]  font-semibold font-poppins ease-in duration-150   text-xs xl:text-sm leading-none text-center text-black  "
-              : "py-2 px-4 cursor-pointer  bg-transparent hover:bg-indigo-50 ease-in duration-150 rounded text-xs xl:text-sm leading-none text-[#262626] "
-          }
-        >
-          FAVORİLERİM
-        </li>
-        <li
-          onClick={() => setActiveStatus(3)}
-          className={
-            activeStatus == 3
-              ? "py-2 px-4 cursor-pointer border-b-[2px] border-[#664fbd]  font-semibold font-poppins ease-in duration-150   text-xs xl:text-sm leading-none text-center text-black  "
-              : "py-2 px-4 cursor-pointer  bg-transparent hover:bg-indigo-50 ease-in duration-150 rounded text-xs xl:text-sm leading-none text-[#262626] "
-          }
-        >
-          MESAJLARIM
-        </li>
-        <li
-          onClick={() => setActiveStatus(4)}
-          className={
-            activeStatus == 4
-              ? "py-2 px-4 cursor-pointer border-b-[2px] border-[#664fbd]  font-semibold font-poppins ease-in duration-150   text-xs xl:text-sm leading-none text-center text-black  "
-              : "py-2 px-4 cursor-pointer  bg-transparent hover:bg-indigo-50 ease-in duration-150 rounded text-xs xl:text-sm leading-none text-[#262626] "
-          }
-        >
-          ÜYELİK BİLGİLERİM
-        </li>
+        <Link href="/ads">
+          <li
+            onClick={() => setActiveStatus(1)}
+            className={
+              activeStatus == 1
+                ? "py-2 px-4 cursor-pointer border-b-[2px] border-[#664fbd]  font-semibold font-poppins ease-in duration-150   text-xs xl:text-sm leading-none text-center text-black  "
+                : "py-2 px-4 cursor-pointer  bg-transparent hover:bg-indigo-50 ease-in duration-150 rounded text-xs xl:text-sm leading-none text-[#262626] "
+            }
+          >
+            İLANLARIM
+          </li>
+        </Link>
+        <Link href="/favorites">
+          <li
+            onClick={() => setActiveStatus(2)}
+            className={
+              activeStatus == 2
+                ? "py-2 px-4 cursor-pointer border-b-[2px] border-[#664fbd]  font-semibold font-poppins ease-in duration-150   text-xs xl:text-sm leading-none text-center text-black  "
+                : "py-2 px-4 cursor-pointer  bg-transparent hover:bg-indigo-50 ease-in duration-150 rounded text-xs xl:text-sm leading-none text-[#262626] "
+            }
+          >
+            FAVORİLERİM
+          </li>
+        </Link>
+        <Link href="/message">
+          <li
+            onClick={() => setActiveStatus(3)}
+            className={
+              activeStatus == 3
+                ? "py-2 px-4 cursor-pointer border-b-[2px] border-[#664fbd]  font-semibold font-poppins ease-in duration-150   text-xs xl:text-sm leading-none text-center text-black  "
+                : "py-2 px-4 cursor-pointer  bg-transparent hover:bg-indigo-50 ease-in duration-150 rounded text-xs xl:text-sm leading-none text-[#262626] "
+            }
+          >
+            MESAJLARIM
+          </li>
+        </Link>
+        <Link href="/membershipInformation">
+          <li
+            onClick={() => setActiveStatus(4)}
+            className={
+              activeStatus == 4
+                ? "py-2 px-4 cursor-pointer border-b-[2px] border-[#664fbd]  font-semibold font-poppins ease-in duration-150   text-xs xl:text-sm leading-none text-center text-black  "
+                : "py-2 px-4 cursor-pointer  bg-transparent hover:bg-indigo-50 ease-in duration-150 rounded text-xs xl:text-sm leading-none text-[#262626] "
+            }
+          >
+            ÜYELİK BİLGİLERİM
+          </li>
+        </Link>
       </ul>
       <div className="md:hidden relative w-11/12 mx-auto bg-white rounded">
         <div className="absolute inset-0 m-auto mr-4 z-0 w-6 h-6">

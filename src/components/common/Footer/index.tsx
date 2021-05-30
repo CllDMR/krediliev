@@ -187,6 +187,15 @@ export const Footer: FC<{}> = ({}) => {
                 Kaydol
               </button>
             </div>
+            <div className="flex my-3">
+              <h1 className=" block text-[#262626] hover:text-gray-500 text-xl font-medium whitespace-nowrap">
+                Takip Et:
+              </h1>
+              <div>asd</div>
+              <div>asd</div>
+              <div>asd</div>
+              <div>asd</div>
+            </div>
           </div>
         </div>
 

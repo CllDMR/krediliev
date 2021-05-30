@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import { Navbar, Footer, ListBox, Breadcrumbs } from "../src/components/common";
-import { PageNav, FavoriteTab } from "../src/components/sections";
+import { PageNav, MembershipInformationTab } from "../src/components/sections";
 
-const favorites = () => {
+const membershipInformation = () => {
   return (
     <div>
       <Head>
@@ -15,11 +15,11 @@ const favorites = () => {
         <Navbar />
         <Breadcrumbs page="Favorilerim" />
         <PageNav />
-        <FavoriteTab />
+        <MembershipInformationTab />
 
         <Footer />
       </main>
     </div>
   );
 };
-export default favorites;
+export default membershipInformation;

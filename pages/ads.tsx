@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import { Navbar, Footer, ListBox, Breadcrumbs } from "../src/components/common";
-import { PageNav, FavoriteTab } from "../src/components/sections";
+import { PageNav, AdsTab } from "../src/components/sections";
 
-const favorites = () => {
+const ads = () => {
   return (
     <div>
       <Head>
@@ -13,13 +13,13 @@ const favorites = () => {
 
       <main className="bg-[#f7f7f7]">
         <Navbar />
-        <Breadcrumbs page="Favorilerim" />
+        <Breadcrumbs page="İlanlarım" />
         <PageNav />
-        <FavoriteTab />
+        <AdsTab />
 
         <Footer />
       </main>
     </div>
   );
 };
-export default favorites;
+export default ads;

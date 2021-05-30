@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import { Navbar, Footer, ListBox, Breadcrumbs } from "../src/components/common";
-import { PageNav, FavoriteTab } from "../src/components/sections";
+import { Login } from "../src/components/sections";
 
-const favorites = () => {
+const login = () => {
   return (
     <div>
       <Head>
@@ -13,13 +13,12 @@ const favorites = () => {
 
       <main className="bg-[#f7f7f7]">
         <Navbar />
-        <Breadcrumbs page="Favorilerim" />
-        <PageNav />
-        <FavoriteTab />
+        <Breadcrumbs page="Giriş Yap" />
+        <Login />
 
         <Footer />
       </main>
     </div>
   );
 };
-export default favorites;
+export default login;

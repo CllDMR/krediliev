@@ -29,7 +29,7 @@ export const MainHero: FC<{}> = ({}) => {
               Satılık
             </button>
           </div>
-          <div className="bg-white  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5  shadow-md rounded px-8 pt-6 pb-6 mb-4 my-2 border-8 border-white-50 border-opacity-100">
+          <div className="bg-white  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5   rounded px-8 pt-6 pb-6 mb-4 my-2 border-8 border-white-50 border-opacity-100">
             <div className="ml-2 mr-2 mb-2">
               <input
                 type="text"

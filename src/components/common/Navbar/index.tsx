@@ -7,7 +7,7 @@ export const Navbar: FC<{}> = ({}) => {
 
   return (
     <>
-      <div className="bg-gray-200  w-full  ">
+      <div className="bg-gray-200  w-full z-50 top-0">
         {/* Code block starts */}
         <nav className="bg-white shadow xl:block hidden ">
           <div className="mx-auto container px-6 py-2 xl:py-0">
@@ -52,9 +52,11 @@ export const Navbar: FC<{}> = ({}) => {
                             d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                           />
                         </svg>
-                        <span className="ml-2 font-bold">
-                          Giriş Yap / Üye Ol
-                        </span>
+                        <Link href="/login">
+                          <span className="ml-2 font-bold whitespace-nowrap">
+                            Giriş Yap / Üye Ol
+                          </span>
+                        </Link>
                       </li>
                       <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
                         <div className="flex items-center">
@@ -151,56 +153,58 @@ export const Navbar: FC<{}> = ({}) => {
                 </div>
               </div>
               <div className="flex w-full  sm:w-auto items-center sm:items-stretch justify-end sm:justify-start">
-                <div className="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="323"
-                    height="58.412"
-                    viewBox="0 0 323 58.412"
-                  >
-                    <g id="header-logo" transform="translate(0.079 -5.222)">
-                      <text
-                        id="krediliev.com"
-                        transform="translate(95.921 46.222)"
-                        fill="#262626"
-                        fontSize="33"
-                        fontFamily="Poppins-SemiBold, Poppins"
-                        fontWeight="600"
-                      >
-                        <tspan x="0" y="0">
-                          krediliev.
-                        </tspan>
-                        <tspan
-                          y="0"
-                          fontFamily="Poppins-Regular, Poppins"
-                          fontWeight="400"
-                        >
-                          com
-                        </tspan>
-                      </text>
-                      <g
-                        id="_01"
-                        data-name="01"
-                        transform="translate(-0.079 5.222)"
-                      >
-                        <path
-                          id="Path_18910"
-                          data-name="Path 18910"
-                          d="M271.193,198.267l-26.9,26.9-11.115-11.115-9.552,9.552,20.668,20.667,36.453-36.45Z"
-                          transform="translate(-196.724 -185.858)"
-                          fill="#6c46b9"
-                        />
-                        <path
-                          id="Path_18911"
-                          data-name="Path 18911"
-                          d="M206.532,173.568l-16.462,16.46v-5.152H181.05v14.173l-10.971,10.97,9.554,9.553,26.9-26.9,11.114,11.114,9.552-9.552Z"
-                          transform="translate(-170.079 -173.568)"
+                <Link href="/">
+                  <div className="flex items-center cursor-pointer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="323"
+                      height="58.412"
+                      viewBox="0 0 323 58.412"
+                    >
+                      <g id="header-logo" transform="translate(0.079 -5.222)">
+                        <text
+                          id="krediliev.com"
+                          transform="translate(95.921 46.222)"
                           fill="#262626"
-                        />
+                          fontSize="33"
+                          fontFamily="Poppins-SemiBold, Poppins"
+                          fontWeight="600"
+                        >
+                          <tspan x="0" y="0">
+                            krediliev.
+                          </tspan>
+                          <tspan
+                            y="0"
+                            fontFamily="Poppins-Regular, Poppins"
+                            fontWeight="400"
+                          >
+                            com
+                          </tspan>
+                        </text>
+                        <g
+                          id="_01"
+                          data-name="01"
+                          transform="translate(-0.079 5.222)"
+                        >
+                          <path
+                            id="Path_18910"
+                            data-name="Path 18910"
+                            d="M271.193,198.267l-26.9,26.9-11.115-11.115-9.552,9.552,20.668,20.667,36.453-36.45Z"
+                            transform="translate(-196.724 -185.858)"
+                            fill="#6c46b9"
+                          />
+                          <path
+                            id="Path_18911"
+                            data-name="Path 18911"
+                            d="M206.532,173.568l-16.462,16.46v-5.152H181.05v14.173l-10.971,10.97,9.554,9.553,26.9-26.9,11.114,11.114,9.552-9.552Z"
+                            transform="translate(-170.079 -173.568)"
+                            fill="#262626"
+                          />
+                        </g>
                       </g>
-                    </g>
-                  </svg>
-                </div>
+                    </svg>
+                  </div>
+                </Link>
               </div>
               <div className="flex">
                 <div className="hidden xl:flex md:mr-6 xl:mr-16">
@@ -236,55 +240,58 @@ export const Navbar: FC<{}> = ({}) => {
                       </div>
                     </div>
                   </a>
-
-                  <a
-                    href="/"
-                    className="text-[14px] flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
-                  >
-                    <span className="mr-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
-                        />
-                      </svg>
-                    </span>
-                    Favorilerim
-                  </a>
-                  <a
-                    href="/"
-                    className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
-                  >
-                    <span className="mr-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                        />
-                      </svg>
-                    </span>
-                    Giriş Yap / Üye Ol
-                  </a>
+                  <Link href="/favorites">
+                    <a
+                      href="/"
+                      className="text-[14px] flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
+                    >
+                      <span className="mr-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                          />
+                        </svg>
+                      </span>
+                      Favorilerim
+                    </a>
+                  </Link>
+                  <Link href="/login">
+                    <a
+                      href="/"
+                      className="flex px-5 items-center whitespace-nowrap py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
+                    >
+                      <span className="mr-2 whitespace-nowrap">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                          />
+                        </svg>
+                      </span>
+                      Giriş Yap / Üye Ol
+                    </a>
+                  </Link>
                 </div>
                 <div className="hidden xl:flex items-center">
                   <div className="relative md:mr-6 my-2">
-                    <button className="rounded-full h-[46px] flex items-center focus:outline-none bg-[#664fbd] border-gray-300 border transition duration-150 ease-in-out hover:bg-[#7861BD]  text-white px-5 py-2 ">
+                    <button className="rounded-full whitespace-nowrap h-[46px] flex items-center focus:outline-none bg-[#664fbd] border-gray-300 border transition duration-150 ease-in-out hover:bg-[#7861BD]  text-white px-5 py-2 ">
                       <i>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -406,56 +413,58 @@ export const Navbar: FC<{}> = ({}) => {
         </nav>
         <nav>
           <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40 ">
-            <div className="w-24">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="223"
-                height="58.412"
-                viewBox="0 0 323 58.412"
-              >
-                <g id="header-logo" transform="translate(0.079 -5.222)">
-                  <text
-                    id="krediliev.com"
-                    transform="translate(95.921 46.222)"
-                    fill="#262626"
-                    fontSize="33"
-                    fontFamily="Poppins-SemiBold, Poppins"
-                    fontWeight="600"
-                  >
-                    <tspan x="0" y="0">
-                      krediliev.
-                    </tspan>
-                    <tspan
-                      y="0"
-                      fontFamily="Poppins-Regular, Poppins"
-                      fontWeight="400"
-                    >
-                      com
-                    </tspan>
-                  </text>
-                  <g
-                    id="_01"
-                    data-name="01"
-                    transform="translate(-0.079 5.222)"
-                  >
-                    <path
-                      id="Path_18910"
-                      data-name="Path 18910"
-                      d="M271.193,198.267l-26.9,26.9-11.115-11.115-9.552,9.552,20.668,20.667,36.453-36.45Z"
-                      transform="translate(-196.724 -185.858)"
-                      fill="#6c46b9"
-                    />
-                    <path
-                      id="Path_18911"
-                      data-name="Path 18911"
-                      d="M206.532,173.568l-16.462,16.46v-5.152H181.05v14.173l-10.971,10.97,9.554,9.553,26.9-26.9,11.114,11.114,9.552-9.552Z"
-                      transform="translate(-170.079 -173.568)"
+            <Link href="/">
+              <div className="w-24 cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="223"
+                  height="58.412"
+                  viewBox="0 0 323 58.412"
+                >
+                  <g id="header-logo" transform="translate(0.079 -5.222)">
+                    <text
+                      id="krediliev.com"
+                      transform="translate(95.921 46.222)"
                       fill="#262626"
-                    />
+                      fontSize="33"
+                      fontFamily="Poppins-SemiBold, Poppins"
+                      fontWeight="600"
+                    >
+                      <tspan x="0" y="0">
+                        krediliev.
+                      </tspan>
+                      <tspan
+                        y="0"
+                        fontFamily="Poppins-Regular, Poppins"
+                        fontWeight="400"
+                      >
+                        com
+                      </tspan>
+                    </text>
+                    <g
+                      id="_01"
+                      data-name="01"
+                      transform="translate(-0.079 5.222)"
+                    >
+                      <path
+                        id="Path_18910"
+                        data-name="Path 18910"
+                        d="M271.193,198.267l-26.9,26.9-11.115-11.115-9.552,9.552,20.668,20.667,36.453-36.45Z"
+                        transform="translate(-196.724 -185.858)"
+                        fill="#6c46b9"
+                      />
+                      <path
+                        id="Path_18911"
+                        data-name="Path 18911"
+                        d="M206.532,173.568l-16.462,16.46v-5.152H181.05v14.173l-10.971,10.97,9.554,9.553,26.9-26.9,11.114,11.114,9.552-9.552Z"
+                        transform="translate(-170.079 -173.568)"
+                        fill="#262626"
+                      />
+                    </g>
                   </g>
-                </g>
-              </svg>
-            </div>
+                </svg>
+              </div>
+            </Link>
             <div className="flex items-center">
               <div
                 id="menu"
@@ -644,40 +653,45 @@ export const Navbar: FC<{}> = ({}) => {
                       fill="#262626"
                     />
                   </svg>
-                  <span className="tab tab-whishlist block text-xs">
-                    Favorilerim
-                  </span>
+                  <Link href="/favorites">
+                    <span className="tab tab-whishlist block text-xs">
+                      Favorilerim
+                    </span>
+                  </Link>
                 </a>
-                <a
-                  href="/"
-                  className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    id="user"
-                    width="28"
-                    height="42"
-                    viewBox="0 0 42 42"
-                    className="inline-block mb-1"
+                <Link href="/login">
+                  <a
+                    href="/"
+                    className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
                   >
-                    <g
-                      id="Group_1087"
-                      data-name="Group 1087"
-                      transform="translate(0)"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="user"
+                      width="28"
+                      height="42"
+                      viewBox="0 0 42 42"
+                      className="inline-block mb-1"
                     >
-                      <path
-                        id="Path_18915"
-                        data-name="Path 18915"
-                        d="M35.849,27.151a20.919,20.919,0,0,0-7.98-5.005,12.141,12.141,0,1,0-13.738,0A21.033,21.033,0,0,0,0,42H3.281a17.719,17.719,0,1,1,35.437,0H42A20.863,20.863,0,0,0,35.849,27.151ZM21,21a8.859,8.859,0,1,1,8.859-8.859A8.869,8.869,0,0,1,21,21Z"
+                      <g
+                        id="Group_1087"
+                        data-name="Group 1087"
                         transform="translate(0)"
-                        fill="#262626"
-                      />
-                    </g>
-                  </svg>
-                  <span className="tab tab-account block text-xs">
-                    Giriş Yap
-                  </span>
-                </a>
+                      >
+                        <path
+                          id="Path_18915"
+                          data-name="Path 18915"
+                          d="M35.849,27.151a20.919,20.919,0,0,0-7.98-5.005,12.141,12.141,0,1,0-13.738,0A21.033,21.033,0,0,0,0,42H3.281a17.719,17.719,0,1,1,35.437,0H42A20.863,20.863,0,0,0,35.849,27.151ZM21,21a8.859,8.859,0,1,1,8.859-8.859A8.869,8.869,0,0,1,21,21Z"
+                          transform="translate(0)"
+                          fill="#262626"
+                        />
+                      </g>
+                    </svg>
+
+                    <span className="tab tab-account block text-xs">
+                      Giriş Yap
+                    </span>
+                  </a>
+                </Link>
               </div>
             </section>
           </div>
