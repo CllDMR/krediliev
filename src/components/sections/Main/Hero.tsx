@@ -21,65 +21,55 @@ export const MainHero: FC<{}> = ({}) => {
             Nullam id elit leo.
           </p>
           {/* form-start */}
-          <div className="space-x-4 flex justify-start items-start">
-            <button>sad</button>
-            <button>sad</button>
+          <div className=" space-x-6 flex justify-start items-start">
+            <button className="w-[108px] h-[51px] bg-[#ff5a61] rounded-md text-white">
+              Kiralık
+            </button>
+            <button className="w-[108px] h-[51px] bg-[#ff5a61] rounded-md text-white">
+              Satılık
+            </button>
           </div>
-          <div className="bg-white xl:w-[1170px]  xl:h-[184px] lg:h-[184px] md:h-[184px] sm:h-[554px] xs:h-[654px] shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
-            <div className="-mx-6 md:flex  mb-6 ">
-              <div className=" px-3 mb-6 md:mb-0 w-80">
-                <input
-                  type="text"
-                  name="first_name"
-                  id="first_name"
-                  placeholder="Kelime Giriniz"
-                  autoComplete="given-name"
-                  className=" px-3 mt-1 h-[50px] w-full  sm:text-sm border border-red rounded-md placeholder-pl-2 "
-                />
-              </div>
-              <div className=" px-3 mb-6 md:mb-0">
-                <ListBox />
-                {/* <select
-                  id="country"
-                  name="country"
-                  autoComplete="country"
-                  className="mt-1 h-[50px] block w-full py-2 px-3 border border-red bg-white rounded-md  focus:outline-none f sm:text-sm"
-                >
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
-                </select> */}
-              </div>
-              <div className=" px-3 mb-6 md:mb-0">
-                <ListBox />
-              </div>
-              <div className=" px-3 mb-6 md:mb-0">
-                <ListBox />
-              </div>
-              <div className=" px-3 mb-6 md:mb-0">
-                <ListBox />
-              </div>
+          <div className="bg-white  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5   rounded px-8 pt-6 pb-6 mb-4 my-2 border-8 border-white-50 border-opacity-100">
+            <div className="ml-2 mr-2 mb-2">
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="Kelime Giriniz"
+                autoComplete="given-name"
+                className=" px-3 mt-1 h-[50px] w-full  sm:text-sm border border-red rounded-md placeholder-pl-2 "
+              />
             </div>
-
-            <div className="-mx-6 md:flex  mb-6 ">
-              <div className=" px-3 mb-6 md:mb-0 w-80">
-                <input
-                  className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3"
-                  id="grid-first-name"
-                  type="text"
-                  placeholder="Jane"
-                />
-              </div>
-              <div className=" px-3 mb-6 md:mb-0">
-                <input
-                  className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3"
-                  id="grid-first-name"
-                  type="text"
-                  placeholder="Jane"
-                />
-              </div>
-
-              <button className="rounded-full  w-40 text-center h-[46px] flex items-center justify-center h-[48px] focus:outline-none bg-[#664fbd] border-gray-300 border transition duration-150 ease-in-out hover:bg-[#7861BD]  text-white px-5 py-2 ">
+            <div className="ml-2 mr-2 mb-2">
+              <ListBox />
+            </div>
+            <div className="ml-2 mr-2 mb-2">
+              <ListBox />
+            </div>
+            <div className="ml-2 mr-2 mb-2">
+              <ListBox />
+            </div>
+            <div className="ml-2 mr-2 mb-2">
+              <ListBox />
+            </div>
+            <div className="ml-2 mr-2 mb-2">
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="Kelime Giriniz"
+                autoComplete="given-name"
+                className=" px-3 mt-1 h-[50px] w-full  sm:text-sm border border-red rounded-md placeholder-pl-2 "
+              />
+            </div>
+            <div className="ml-2 mr-2 mb-2">
+              <ListBox />
+            </div>
+            <div className="ml-2 mr-2 mb-2">
+              <ListBox />
+            </div>
+            <div>
+              <button className=" ml-2 mr-2 mb-2 rounded-full  w-40 text-center h-[46px] flex items-center justify-center h-[48px] focus:outline-none bg-[#664fbd] border-gray-300 border transition duration-150 ease-in-out hover:bg-[#7861BD]  text-white px-5 py-2 ">
                 Ara
               </button>
             </div>

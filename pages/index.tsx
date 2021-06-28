@@ -9,7 +9,7 @@ import {
   CategoryCard,
 } from "../src/components/sections";
 
-export default function Home({ fixed }) {
+const Home = () => {
   return (
     <div>
       <Head>
@@ -30,4 +30,5 @@ export default function Home({ fixed }) {
       </main>
     </div>
   );
-}
+};
+export default Home;
